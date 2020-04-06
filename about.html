@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" style="-webkit-overflow-scrolling: touch;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bulma -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+
+    <!--Font Awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./static/img/icon.png">
+
+    <title>Kart</title>
+
+</head>
+
+<body data-target-row-height="200" style="margin: 0;">
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+<div class="navbar-brand">
+    <a class="navbar-item" href="/">
+        <h1 class="title is-1">Kartikeya Kandula</h1>
+<!--         <img src="./static/img/logo.png" alt=""></a> -->
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+</div>
+
+<div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-end">
+        <a class="navbar-item right" href="/">Home</a>
+        <a class="navbar-item right" href="/about">About</a>
+        <a class="navbar-item right" href="/photos">Photos</a>
+        <a class="navbar-item right" href="/resume.pdf">Resume</a>
+    </div>
+</div>
+</nav>
+
+<section class="hero is-medium" id = "intro-section">
+  <div class="hero-body" style="padding-top: 5rem; padding-bottom: 1rem">
+    <div class="columns">
+      <div class="column is-8 is-offset-2" style="text-align: center;">
+        <h1><strong>"How would you describe yourself?"</strong></h1>
+        <h1>Terrible question, but here are some of my favorite things.</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="thumbnailContainer">
+    <div class="thumbnails"></div>
+</div>
+<script type="text/javascript">
+    var LR = LR || {};
+    LR.images = [
+        {"largeWidth": "1865", "largeHeight": "933", "exportFilename": "808s", "url": "https://pitchfork.com/features/overtones/9725-the-coldest-story-ever-told-the-influence-of-kanye-wests-808s-heartbreak/"},
+        {"largeWidth": "1265", "largeHeight": "900", "exportFilename": "AIrevolution", "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"},
+        {"largeWidth": "960", "largeHeight": "640", "exportFilename": "burke", "url": "https://www.youtube.com/watch?v=b5RK8ED2CUY"},
+        {"largeWidth": "630", "largeHeight": "630", "exportFilename": "chance", "url": "https://www.gq.com/story/how-chance-the-rappers-life-became-perfect"},
+        {"largeWidth": "630", "largeHeight": "354", "exportFilename": "chess", "url": "http://www.elometer.net/"},
+        {"largeWidth": "275", "largeHeight": "183", "exportFilename": "code", "url": "https://github.com/Droogans/unmaintainable-code"},
+        {"largeWidth": "3606", "largeHeight": "2400", "exportFilename": "daenarys", "url": "https://www.youtube.com/watch?v=0cHRmQWUCl4"},
+        {"largeWidth": "543", "largeHeight": "401", "exportFilename": "doubles", "url": "https://www.lansingstatejournal.com/story/sports/high-school/2015/10/15/okemos-tennis-doubles-duo-has-impressive-resume/73964868/"},
+        {"largeWidth": "650", "largeHeight": "430", "exportFilename": "federer", "url": "https://www.nytimes.com/2006/08/20/sports/playmagazine/20federer.html"},
+        {"largeWidth": "1280", "largeHeight": "720", "exportFilename": "federer17AO", "url": "https://www.youtube.com/watch?v=Hp9JzkMHbF8"},
+        {"largeWidth": "848", "largeHeight": "599", "exportFilename": "federer2009AO", "url": "https://www.youtube.com/watch?v=dCjw0Unm8OY"},
+        {"largeWidth": "299", "largeHeight": "168", "exportFilename": "flume", "url": "https://www.youtube.com/watch?v=vNy-CnyEMoA"},
+        {"largeWidth": "500", "largeHeight": "441", "exportFilename": "FrankOceanLetter", "url": "http://frankocean.tumblr.com/post/26473798723"},
+        {"largeWidth": "613", "largeHeight": "334", "exportFilename": "gametheory", "url": "https://www.scientificamerican.com/article/game-theory-calls-cooperation-into-question1/"},
+        {"largeWidth": "1560", "largeHeight": "1038", "exportFilename": "halderman", "url": "https://www.nytimes.com/2018/04/05/opinion/election-voting-machine-hacking-russians.html"},
+        {"largeWidth": "3000", "largeHeight": "2227", "exportFilename": "HeyMama", "url": "https://www.dailymotion.com/video/x4c7hf"},
+        {"largeWidth": "1129", "largeHeight": "635", "exportFilename": "indianmanagers", "url": "https://qz.com/india/1469711/why-india-born-pichai-nadella-nooyi-rule-us-business/"},
+        {"largeWidth": "700", "largeHeight": "450", "exportFilename": "jordan", "url": "http://www.espn.com/espn/feature/story/_/page/Michael-Jordan/michael-jordan-not-left-building?src=longreads"},
+        {"largeWidth": "1024", "largeHeight": "683", "exportFilename": "jpm", "url": "http://fortune.com/2012/05/13/the-toughest-guy-on-wall-street-fortune-2006/"},
+        {"largeWidth": "1000", "largeHeight": "750", "exportFilename": "kaep", "url": "https://www.gq.com/story/colin-kaepernick-will-not-be-silenced"},
+        {"largeWidth": "1401", "largeHeight": "788", "exportFilename": "kanye", "url": "https://flypaper.soundfly.com/produce/the-musical-and-sociopolitical-evolution-of-kanyes-use-of-soul-music-samples/"},
+
+        {"largeWidth": "300", "largeHeight": "168", "exportFilename": "logictyson", "url": "https://www.youtube.com/watch?v=9hccvsQIEZ8"},
+        {"largeWidth": "1870", "largeHeight": "690", "exportFilename": "microsoftlogo", "url": "https://www.cnet.com/news/this-is-not-your-fathers-microsoft/"},
+        {"largeWidth": "6178", "largeHeight": "4118", "exportFilename": "mpowered", "url": "https://mpowered.umich.edu/team"},
+        {"largeWidth": "1024", "largeHeight": "1200", "exportFilename": "obama", "url": "http://nymag.com/intelligencer/2018/06/where-is-barack-obama.html?gtm=top&gtm=top"},
+        {"largeWidth": "1620", "largeHeight": "1080", "exportFilename": "pablo", "url": ""},
+        {"largeWidth": "1200", "largeHeight": "899", "exportFilename": "parthenon", "url": "https://vsco.co/kartikeyakandula/"},
+        {"largeWidth": "696", "largeHeight": "464", "exportFilename": "pichai", "url": "https://www.buzzfeednews.com/article/mathonan/searching-for-google-ceo-sundar-pichai-the-most-powerful-tec#.td132Pbeg"},
+        {"largeWidth": "1280", "largeHeight": "720", "exportFilename": "poole", "url": "https://www.youtube.com/watch?v=1n4rqMnxaig"},
+        {"largeWidth": "868", "largeHeight": "708", "exportFilename": "RL", "url": "http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html"},
+        {"largeWidth": "1000", "largeHeight": "1500", "exportFilename": "senatori", "url": "https://www.instagram.com/p/BYTczozlxKr/"},
+        {"largeWidth": "1200", "largeHeight": "800", "exportFilename": "spotify", "url": "https://open.spotify.com/user/21iynn2hcjg5teemfebjwq7zy?si=SxDjJPXbQ1CyKSBv8c1MNA"},
+        {"largeWidth": "1667", "largeHeight": "500", "exportFilename": "srg", "url": "https://strategicreasoning.org/"},
+        {"largeWidth": "720", "largeHeight": "330", "exportFilename": "stringtheory", "url": "https://www.esquire.com/sports/a5151/the-string-theory-david-foster-wallace/"},
+        {"largeWidth": "1280", "largeHeight": "853", "exportFilename": "umich", "url": "https://www.wsj.com/articles/a-rebuttal-to-jason-gay-1475245637"},
+        {"largeWidth": "1200", "largeHeight": "713", "exportFilename": "visualgo", "url": "https://visualgo.net/en"},
+        {"largeWidth": "1024", "largeHeight": "580", "exportFilename": "WhatIsCode", "url": "https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/"},
+        {"largeWidth": "1200", "largeHeight": "800", "exportFilename": "woelfel", "url": "https://www.instagram.com/brandonwoelfel/?hl=en"},
+                            ]        </script>
+<script src="/static/js/about.js"></script>
+
+
+
+
+<footer class="footer" style="padding-bottom: 2rem;">
+    <div class="content has-text-centered">
+        <a href="https://codepen.io/kartikeya-kandula/" target="_blank" class="btn-social"><i class="fa fa-codepen"></i></a>
+        <a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-social"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.behance.net/kartikeyakandula" target="_blank" class="btn-social"><i class="fa fa-behance"></i></a>
+        <a href="https://github.com/kartkand" target="_blank" class="btn-social"><i class="fa fa-github-square"></i></a>
+        <a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-social"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="content has-text-centered">
+        <div class="footer-brand">&copy 2019 Kartikeya Kandula</div>
+    </div>
+</footer>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+
+
+</body>
+</html>

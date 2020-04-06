@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bulma -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+
+    <!--Font Awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./static/img/icon.png">
+
+    <title>Kart</title>
+
+</head>
+
+<body data-target-row-height="200" style="margin: 0;">
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+<div class="navbar-brand">
+    <a class="navbar-item" href="/">
+        <h1 class="title is-1">Kartikeya Kandula</h1>
+<!--         <img src="./static/img/logo.png" alt=""></a> -->
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+</div>
+
+<div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-end">
+        <a class="navbar-item right" href="/">Home</a>
+        <a class="navbar-item right" href="/about">About</a>
+        <a class="navbar-item right" href="/photos">Photos</a>
+        <a class="navbar-item right" href="/resume.pdf">Resume</a>
+    </div>
+</div>
+</nav>
+
+<section class="hero is-medium" id = "intro-section">
+  <div class="hero-body" style="padding-top: 5rem; padding-bottom: 1rem">
+    <div class="columns">
+      <div class="column is-8 is-offset-2" style="text-align: center;">
+        <h1><strong>Some pictures I've taken</strong></h1>
+        <h1>Follow my <a class="highlight-link" href="http://instagram.com/kartikeyakandula" target="_blank">Insta</a> and <a class="highlight-link" href="https://vsco.co/kartikeyakandula" target="_blank">VSCO</a> for more!</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="thumbnailContainer">
+    <div class="thumbnails"></div>
+</div>
+<div id="loupeContainer" class="show-corners">
+    <div class="background"></div>
+    <div class="image-container"></div>    
+    <div class="side-navigation">
+        <div class="hotspot" id="hotspotPrevLoupe">
+            <div class="button" id="buttonPrevSideLoupe">
+                <svg version="1.1" baseProfile="basic" id="svgIconPrevSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve"><path class="icon custom-colorable" fill="#231F20" d="M0,0l0,50h50V0L0,0z M18.491,25.05l9.707-9.264c0.418-0.399,1.092-0.403,1.506-0.008l1.498,1.43c0.413,0.395,0.41,1.039-0.009,1.438l-6.765,6.456l6.613,6.31c0.41,0.392,0.414,1.024,0.008,1.412l-1.471,1.404c-0.406,0.387-1.068,0.384-1.479-0.008l-6.612-6.311L18.491,25.05z"/></svg>
+            </div>
+        </div>
+        <div class="hotspot" id="hotspotNextLoupe">
+            <div class="button" id="buttonNextSideLoupe">
+                <svg version="1.1" baseProfile="basic" id="svgIconNextSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve">
+                    <path class="icon custom-colorable" fill="#231F20" d="M0,0v50h50V0H0z M28.513,27.909l-6.612,6.311c-0.411,0.392-1.073,0.395-1.479,0.008l-1.471-1.404 c-0.406-0.388-0.402-1.02,0.008-1.412l6.613-6.31l-6.765-6.456c-0.419-0.399-0.422-1.043-0.009-1.438l1.498-1.43 c0.414-0.395,1.088-0.391,1.506,0.008l9.707,9.264L28.513,27.909z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="lateral-nav-container" style="background: #FFF;">
+        <ul class="lateral-nav">
+            <li id="buttonPrev">
+                <svg version="1.1" id="svgIconPrevLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                    </style>
+                    <path class="icon custom-colorable" d="M25.20105,14.76864l-8.2004,7.773l2.5314,2.3992l5.5858,5.2952c0.3469,0.3289,0.9064,0.3318,1.2497,0.0065
+                        l1.2431-1.1783c0.3429-0.3252,0.3398-0.8555-0.0071-1.1846l-5.5864-5.2948l5.7149-5.4171c0.3535-0.3349,0.3568-0.875,0.0074-1.2063
+                        l-1.2657-1.1995C26.12435,14.43064,25.55435,14.43354,25.20105,14.76864z"/>
+                </svg>
+            </li>
+            <li class="count"><span id="countCurrent"></span> of <span id="countTotal"></span></li>
+            <li id="buttonNext">
+                <svg version="1.1" id="svgIconNextLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                    </style>
+                    <path class="icon custom-colorable" d="M19.79895,14.76864l8.2004,7.773l-2.5314,2.3992l-5.5858,5.2952c-0.3469,0.3289-0.9064,0.3318-1.2497,0.0065
+                        l-1.2431-1.1783c-0.3429-0.3252-0.3398-0.8555,0.0071-1.1846l5.5864-5.2948l-5.7149-5.4171
+                        c-0.3535-0.3349-0.3568-0.875-0.0074-1.2063l1.2657-1.1995C18.87565,14.43064,19.44565,14.43354,19.79895,14.76864z"/>
+                </svg>
+            </li>
+        </ul>
+    </div>
+    <div id="loupeCloseButton">
+        <svg version="1.1" id="svgIconLoupeClose" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+            <path class="shape-x custom-colorable" d="M14.77881,17.30074l5.212,5.2222l-5.0831,5.0924c-0.3476,0.3484-0.5746,0.7624-0.2308,1.1067l1.5682,1.4763
+                c0.3436,0.3443,0.8045,0.2596,1.1521-0.0886l5.0825-5.093l5.2119,5.222c0.3536,0.3547,0.9244,0.3578,1.2741,0.0073l1.2677-1.27
+                c0.3497-0.3507,0.3465-0.9224-0.0071-1.2768l-5.2119-5.2221l5.0828-5.0925c0.3475-0.3485,0.5429-0.8259,0.1994-1.1702
+                l-1.6474-1.4921c-0.3438-0.3443-0.6936-0.1803-1.0411,0.1679l-5.0828,5.0929l-5.212-5.222
+                c-0.3537-0.3546-0.9241-0.3577-1.2742-0.007l-1.2672,1.2698C14.42171,16.37464,14.42491,16.94624,14.77881,17.30074z"/>
+        </svg>
+    </div>
+</div>
+<script type="text/javascript">
+    var LR = LR || {};
+    LR.images = [                                                                                        {"id": "475", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5141", "title": "", "caption" : ""},
+                 {"id": "4321", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1896_orig", "title": "", "caption" : ""},
+                 {"id": "4322", "largeWidth": "1067", "largeHeight": "800", "exportFilename": "img-1892_orig", "title": "", "caption" : ""},
+                 {"id": "4323", "largeWidth": "675", "largeHeight": "1200", "exportFilename": "img-1893_orig", "title": "", "caption" : ""},
+                 {"id": "4324", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1894_orig", "title": "", "caption" : ""},
+                 {"id": "4325", "largeWidth": "451", "largeHeight": "800", "exportFilename": "img-1895_orig", "title": "", "caption" : ""},
+                 {"id": "4326", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1897_orig", "title": "", "caption" : ""},
+                 {"id": "4327", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1898_orig", "title": "", "caption" : ""},
+                 {"id": "4328", "largeWidth": "1067", "largeHeight": "800", "exportFilename": "img-1900_orig", "title": "", "caption" : ""},
+                 {"id": "4329", "largeWidth": "675", "largeHeight": "1200", "exportFilename": "img-1901_orig", "title": "", "caption" : ""},
+                 {"id": "4330", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1902_orig", "title": "", "caption" : ""},
+                 {"id": "4331", "largeWidth": "800", "largeHeight": "1067", "exportFilename": "img-1903_orig", "title": "", "caption" : ""},
+                 {"id": "4332", "largeWidth": "1067", "largeHeight": "800", "exportFilename": "img-1904_orig", "title": "", "caption" : ""},
+                 {"id": "4333", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1880_orig", "title": "", "caption" : ""},
+                 {"id": "4334", "largeWidth": "675", "largeHeight": "1200", "exportFilename": "img-1881_orig", "title": "", "caption" : ""},
+                 {"id": "4335", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1882_orig", "title": "", "caption" : ""},
+                 {"id": "4336", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "img-1884_orig", "title": "", "caption" : ""},
+                 {"id": "4337", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1883_orig", "title": "", "caption" : ""},
+                 {"id": "4338", "largeWidth": "675", "largeHeight": "1200", "exportFilename": "img-1885_orig", "title": "", "caption" : ""},
+                 {"id": "4339", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1886_orig", "title": "", "caption" : ""},
+                 {"id": "4340", "largeWidth": "1067", "largeHeight": "800", "exportFilename": "img-1887_orig", "title": "", "caption" : ""},
+                 {"id": "4341", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1888_orig", "title": "", "caption" : ""},
+                 {"id": "4342", "largeWidth": "600", "largeHeight": "800", "exportFilename": "img-1889_orig", "title": "", "caption" : ""},
+                 {"id": "4343", "largeWidth": "1100", "largeHeight": "734", "exportFilename": "img-1890_orig", "title": "", "caption" : ""},
+                 {"id": "4344", "largeWidth": "1100", "largeHeight": "734", "exportFilename": "img-1891_orig", "title": "", "caption" : ""},
+                 {"id": "2514", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5149", "title": "", "caption" : ""},
+                 {"id": "2515", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5150", "title": "", "caption" : ""},
+                 {"id": "2516", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5151", "title": "", "caption" : ""},
+                 {"id": "2517", "largeWidth": "900", "largeHeight": "1200", "exportFilename": "IMG_5152", "title": "", "caption" : ""},
+                 {"id": "2518", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5153", "title": "", "caption" : ""},
+                 {"id": "2519", "largeWidth": "900", "largeHeight": "1200", "exportFilename": "IMG_5154", "title": "", "caption" : ""},
+                 {"id": "2520", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5155", "title": "", "caption" : ""},
+                 {"id": "2521", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5156", "title": "", "caption" : ""},
+                 {"id": "2522", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5157", "title": "", "caption" : ""},
+                 {"id": "2523", "largeWidth": "900", "largeHeight": "1200", "exportFilename": "IMG_5160", "title": "", "caption" : ""},
+                 {"id": "2524", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5162", "title": "", "caption" : ""},
+                 {"id": "2525", "largeWidth": "1200", "largeHeight": "900", "exportFilename": "IMG_5163", "title": "", "caption" : ""},
+                 {"id": "2526", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5164", "title": "", "caption" : ""},
+                 {"id": "2527", "largeWidth": "900", "largeHeight": "1200", "exportFilename": "IMG_5165", "title": "", "caption" : ""},
+                 {"id": "2528", "largeWidth": "900", "largeHeight": "1200", "exportFilename": "IMG_5166", "title": "", "caption" : ""},
+                 {"id": "2529", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5167", "title": "", "caption" : ""},
+                 {"id": "2530", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5168", "title": "", "caption" : ""},
+                 {"id": "2531", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5169", "title": "", "caption" : ""},
+                 {"id": "2532", "largeWidth": "1200", "largeHeight": "900", "exportFilename": "IMG_5170", "title": "", "caption" : ""},
+                 {"id": "2533", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5171", "title": "", "caption" : ""},
+                 {"id": "2534", "largeWidth": "1200", "largeHeight": "900", "exportFilename": "IMG_5172", "title": "", "caption" : ""},
+                 {"id": "2535", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5173", "title": "", "caption" : ""},
+                 {"id": "2536", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5174", "title": "", "caption" : ""},
+                 {"id": "2537", "largeWidth": "900", "largeHeight": "1200", "exportFilename": "IMG_5175", "title": "", "caption" : ""},
+                 {"id": "2538", "largeWidth": "675", "largeHeight": "1200", "exportFilename": "IMG_5176", "title": "", "caption" : ""},
+                 {"id": "2539", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5177", "title": "", "caption" : ""},
+                 {"id": "2540", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5178", "title": "", "caption" : ""},
+                 {"id": "2541", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5179", "title": "", "caption" : ""},
+                 {"id": "2542", "largeWidth": "1200", "largeHeight": "899", "exportFilename": "IMG_5180", "title": "", "caption" : ""},
+                 {"id": "2543", "largeWidth": "899", "largeHeight": "1200", "exportFilename": "IMG_5181", "title": "", "caption" : ""},
+                 {"id": "2544", "largeWidth": "1200", "largeHeight": "1159", "exportFilename": "IMG_5182", "title": "", "caption" : ""},
+                 {"id": "2545", "largeWidth": "676", "largeHeight": "1200", "exportFilename": "IMG_5183", "title": "", "caption" : ""},
+                 {"id": "2546", "largeWidth": "1200", "largeHeight": "1149", "exportFilename": "IMG_5184", "title": "", "caption" : ""},
+                 {"id": "2547", "largeWidth": "1200", "largeHeight": "856", "exportFilename": "IMG_5185", "title": "", "caption" : ""},
+                 {"id": "2548", "largeWidth": "1031", "largeHeight": "1200", "exportFilename": "IMG_5186", "title": "", "caption" : ""},
+                 {"id": "2549", "largeWidth": "1200", "largeHeight": "1142", "exportFilename": "IMG_5187", "title": "", "caption" : ""},
+                 {"id": "2550", "largeWidth": "972", "largeHeight": "1200", "exportFilename": "IMG_5188", "title": "", "caption" : ""},
+                 {"id": "2551", "largeWidth": "1152", "largeHeight": "1122", "exportFilename": "IMG_5189", "title": "", "caption" : ""},
+                 {"id": "2552", "largeWidth": "1153", "largeHeight": "844", "exportFilename": "IMG_5190", "title": "", "caption" : ""},
+                 {"id": "2553", "largeWidth": "1152", "largeHeight": "1126", "exportFilename": "IMG_5191", "title": "", "caption" : ""},
+                 {"id": "2554", "largeWidth": "983", "largeHeight": "787", "exportFilename": "IMG_5192", "title": "", "caption" : ""},
+                            ]        </script>
+<script src="/static/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+<footer class="footer" style="padding-bottom: 2rem;">
+    <div class="content has-text-centered">
+        <a href="https://codepen.io/kartikeya-kandula/" target="_blank" class="btn-social"><i class="fa fa-codepen"></i></a>
+        <a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-social"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.behance.net/kartikeyakandula" target="_blank" class="btn-social"><i class="fa fa-behance"></i></a>
+        <a href="https://github.com/kartkand" target="_blank" class="btn-social"><i class="fa fa-github-square"></i></a>
+        <a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-social"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="content has-text-centered">
+        <div class="footer-brand">&copy 2019 Kartikeya Kandula</div>
+    </div>
+</footer>
+
+</body>
+</html>

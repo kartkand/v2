@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bulma -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+
+    <!--Font Awesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./static/img/icon.png">
+
+    <title>Kart</title>
+
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+<div class="navbar-brand">
+    <a class="navbar-item" href="/">
+        <h1 class="title is-1">Kartikeya Kandula</h1>
+<!--         <img src="./static/img/logo.png" alt=""></a> -->
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+</div>
+
+<div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-end">
+        <a class="navbar-item right" href="/">Home</a>
+        <a class="navbar-item right" href="/about">About</a>
+        <a class="navbar-item right" href="/photos">Photos</a>
+        <a class="navbar-item right" href="/resume.pdf">Resume</a>
+    </div>
+</div>
+</nav>
+
+<section class="hero is-medium" id = "intro-section">
+  <div class="hero-body" style="padding-top: 5rem; padding-bottom: 1rem">
+    <div class="columns">
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <img src="./static/img/name.svg">
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-half is-offset-one-quarter">
+        <h1><strong>Hello!</strong> 👋</h1>
+        <h1>I'm <strong>Kartikeya Kandula</strong> (you can call me Kart), a software engineer studying at <a class="highlight-link" href="https://www.youtube.com/watch?v=1n4rqMnxaig" target="_blank">THE University of Michigan</a>. 👨🏾‍💻 </h1>
+
+        <p style="margin-top: 2.5rem; margin-bottom: 2.5rem;"><a href="https://www.instagram.com/kartikeyakandula/" class="arrow-link" target="_blank">See my life</a></p>
+
+        <h1>I'm not a huge fan of writing about myself, but here are some things I do like:</h1>
+        <h1>
+          <a class="highlight-link" href="https://vsco.co/kartikeyakandula/" target="_blank">photography</a>
+          <a class="highlight-link" href="https://www.google.com/maps/place/Ann+Arbor,+MI/" target="_blank">Ann Arbor</a>
+          <a class="highlight-link" href="https://www.nytimes.com/2006/08/20/sports/playmagazine/20federer.html" target="_blank">🎾</a>
+          <a class="highlight-link" href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DZ06evO1irWRq?si=7a2z9FPjR5iXWUKU0-P5pQ" target="_blank">Frank Ocean</a>
+          <a class="highlight-link" href="https://visualgo.net/" target="_blank">algorithms</a>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-medium dark-section">
+  <div style="margin-top: -10px;"><img class="svgback" src="./static/img/background.svg"></div>
+  <div class="hero-body" style="padding-top: 0;">
+    <div class="columns">
+      <div class="dark-panel column is-8 is-offset-2">
+        <h4 class="section-title"><span class="section-number">01. </span>Where I've Worked</h4>
+        
+        <div class="tab-container" style="min-height: 450px;">
+          <div class="columns container" style="max-width: 100%; margin: 0;">
+            <div class="column is-2 is-offset-1 tabs" style="border-bottom-width: 0px; padding: 0;">
+              
+              <a class="tab tab-1 active" href="#" data-tab="1" style="border-bottom-width: 0px;">Microsoft</a>
+              <a class="tab tab-2" href="#" data-tab="2" style="border-bottom-width: 0px;">JPMorgan</a>
+              <a class="tab tab-3" href="#" data-tab="3" style="border-bottom-width: 0px;">Pretium Analytics</a>
+              <a class="tab tab-4" href="#" data-tab="4" style="border-bottom-width: 0px;">Delta Dental</a>
+
+              <span class="highlighter"></span>
+              
+            </div>
+
+            <div class="column is-8 content-container">
+
+              <div class="content-section visible" data-tab="1">
+                <h4 class="job-title">Software Engineering Intern <span class="job-company">@ <a href="https://www.microsoft.com/en-us/" target="_blank" rel="nofollow noopener noreferrer"> Microsoft</a></span></h4>
+                <p class="employment-date">June 2019 - August 2019</p>
+                <ul>
+                  <li>Worked on the Excel application for Mac devices under the Experiences and Devices organization</li>
+                  <li>Delivered new file recovery process that led to dramatic drop in force quit rate for users</li>
+                  <li>Converted file recovery dialog from modal window on startup to message bar within Excel workbook to prevent the blocking of interactions with the application</li>
+                </ul>
+              </div>
+
+              <div class="content-section" data-tab="2">
+                <h4 class="job-title">Technology Analyst <span class="job-company">@ <a href="https://www.jpmorganchase.com/" target="_blank" rel="nofollow noopener noreferrer"> JPMorgan</a></span></h4>
+                <p class="employment-date">June 2018 - August 2018</p>
+                <ul>
+                  <li>Worked in Agile environment to develop Java Spring web application that implements GraphQL API to consolidate data from existing microservices</li>
+                  <li>Used MyBatis to couple objects with stored procedures / SQL statements</li>
+                  <li>Conducted user interviews to develop wireframes using Balsamiq for frontend design</li>
+                  <li>Utilized Elasticsearch to create search framework for backend of application</li>
+                </ul>
+              </div>
+
+              <div class="content-section" data-tab="3">
+                <h4 class="job-title">Developer <span class="job-company">@ <a href="http://www.pretiumanalytics.com/joomla/" target="_blank" rel="nofollow noopener noreferrer"> Pretium Analytics</a></span></h4>
+                <p class="employment-date">September 2017 - April 2018</p>
+                <ul>
+                  <li>Worked on Business Analytics Framework that incorporates analytic strategy, implementation planning, implementation, and operation</li>
+                  <li>Built company website using Django framework</li>
+                  <li>Handled graphic design responsibilites including creating flyers, logo design, and user interface development</li>
+                </ul>
+              </div>
+
+
+              <div class="content-section" data-tab="4">
+                <h4 class="job-title">Programming Intern <span class="job-company">@ <a href="https://www.deltadental.com/" target="_blank" rel="nofollow noopener noreferrer"> Delta Dental</a></span></h4>
+                <p class="employment-date">May 2017 - August 2017</p>
+                <ul>
+                  <li>Implemented single sign-on process using LDAP for claims processing engine</li>
+                  <li>Added critical features to rules editor requested by business end-users such as ability for clients to view / edit rules from multiple rule stores simultaneously</li>
+                  <li>Converted client desktop application from Swing to JavaFX</li>
+                  <li>Implemented process to automatically refresh JTree when changes are made to keep in sync with server</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> 
+  </div>
+  <div class="hero-body">
+    <div class="columns">
+      <div class="dark-panel column is-8 is-offset-2">
+        <h4 class="section-title"><span class="section-number">02. </span>Things I've Done</h4>
+
+        <div class="project">
+          <div class="project-content left">
+            <div class="project-label">Research Publication</div>
+            <h4 class="project-title">UnclearBallot</h4>
+            <div class="project-details">
+              <p>UnclearBallot: Automated Ballot Image Manipulation - developed an algorithm that automatically manipulates ballot images by moving voters' marks so that they appear to be votes for the attacker's preferred candidate. Shows that the attack can be delivered in the form of a malicious Windows scanner driver, which we test with a scanner that has been certified for use in vote tabulation by the U.S. Election Assistance Commission. Accepted for publication in Springer LNCS and will be presented at E-Vote-ID and Def Con 27.</p>
+              <ul>
+                <li>Elections</li>
+                <li>Security</li>
+              </ul>
+            </div>
+            <div class="featured-links">
+            	<a href="https://www.youtube.com/watch?v=ja6J1wY2UNw" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 297.033 297.033" style="enable-background:new 0 0 297.033 297.033;" xml:space="preserve"><g><path d="M287.033,165.586h-4.772V10.594c0-5.523-4.478-10-10-10H24.772c-5.522,0-10,4.477-10,10v154.992H10c-5.522,0-10,4.477-10,10s4.478,10,10,10h98.762L69.5,282.688c-2.07,5.12,0.401,10.949,5.521,13.02c5.117,2.069,10.949-0.402,13.02-5.522l23.56-58.268c0.056,0.001,0.111,0.008,0.167,0.008h73.496c0.056,0,0.111-0.008,0.167-0.008l23.56,58.268c1.573,3.892,5.318,6.254,9.273,6.254c1.248,0,2.518-0.235,3.746-0.731c5.12-2.07,7.592-7.899,5.521-13.02l-39.262-97.102h98.762c5.522,0,10-4.477,10-10S292.556,165.586,287.033,165.586z M34.772,165.586V20.594h227.488v144.992H34.772zM177.348,211.926h-57.663l10.65-26.339h36.363L177.348,211.926z"/></g></svg></a>
+              <a href="/unclearballot.pdf" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve"><g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M3459.4,4261.4c-27.2-19.4-60.3-54.5-72-79.7s-35-196.5-50.6-381.2C3171.5,1962.2,2815.6,205.8,2411-776.5c-66.1-159.5-124.5-330.7-128.4-381.2c-7.8-83.6-3.9-99.2,48.6-151.7c46.7-44.7,75.9-58.3,138.1-58.3c145.9,0,194.5,75.8,392.9,603c381.3,1005.7,704.1,2657.1,883.1,4499.1l13.6,130.3h147.8c81.7,0,1332.4-35,2775.7-77.8c1445.2-42.8,2662.9-77.8,2709.6-77.8h83.7l-9.7-101.2c-7.8-56.4-38.9-344.3-70-638c-219.8-1984-569.9-3822.2-951.2-4975.7c-301.5-910.3-612.7-1437.5-947.3-1600.8c-114.8-56.4-136.2-60.3-252.9-50.6c-171.2,15.6-293.7,85.6-474.6,266.5c-225.6,227.6-497.9,647.7-770.3,1188.5c-75.8,153.7-143.9,262.6-173.1,282.1c-44.7,29.2-305.4,38.9-2417.8,87.5c-1301.3,29.2-2554,56.4-2781.5,60.3l-414.3,5.8l-58.4-64.2c-75.9-83.7-73.9-147.8,13.6-418.2c87.5-272.3,264.5-647.7,408.5-861.7c132.3-200.4,383.2-468.8,544.6-583.5c147.8-105,402.6-225.7,571.9-270.4c188.7-48.6,723.6-62.3,3341.7-89.5c2495.6-25.3,2437.3-27.2,2639.6,73.9c431.8,214,824.7,840.3,1167.1,1863.4c188.7,562.1,412.4,1486.1,571.9,2347.8c184.8,997.9,383.2,2458.6,470.7,3450.7c23.3,254.8,21.4,280.1-9.7,328.7c-19.5,29.2-62.2,62.2-95.3,75.8c-46.7,19.5-797.5,46.7-2882.7,107c-1550.3,44.8-2946.9,85.6-3102.5,91.4C3546.9,4292.5,3506.1,4290.6,3459.4,4261.4z M3245.4-2241.2c1285.7-31.1,2342-58.4,2345.8-62.2c2-3.9,60.3-112.8,126.4-241.2c155.6-297.6,443.5-731.4,624.4-939.5c77.8-89.5,138.1-163.4,134.2-167.3c-15.6-9.7-3345.7,27.2-3956.4,44.8c-577.7,15.6-655.5,21.4-778.1,60.3c-134.2,40.8-305.4,126.4-398.8,198.4c-214,163.4-445.4,457.1-593.3,754.7c-64.2,126.4-165.3,371.5-165.3,398.8C584.5-2179,751.8-2182.9,3245.4-2241.2z"/><path d="M4702.4,2425.2c-73.9-58.3-101.2-155.6-64.2-239.2c54.5-134.2-40.8-124.5,1731.2-186.7c959-35,1628.1-50.6,1655.3-40.8c128.4,48.6,169.2,233.4,72,330.7c-48.6,46.7-75.9,56.4-200.4,66.1c-126.4,9.7-2964.4,110.9-3092.8,108.9C4774.3,2464.1,4729.6,2446.6,4702.4,2425.2z"/><path d="M4453.4,987.7c-107-107-56.4-309.3,83.6-340.4c40.8-9.7,2748.5-108.9,2960.5-108.9c79.7,0,103.1,9.7,159.5,66.1c91.4,91.4,91.4,184.8,0,276.2c-44.7,44.7-85.6,66.1-120.6,66.1c-31.1,0-651.6,21.4-1379.1,48.6C4435.9,1057.8,4525.3,1057.8,4453.4,987.7z"/><path d="M4095.5-418.6c-66.1-58.4-87.5-143.9-60.3-229.5c42.8-128.4,40.8-128.4,1019.2-163.4c663.3-25.3,890.9-27.2,923.9-9.7c143.9,73.9,149.8,293.7,11.7,369.6c-37,19.5-1241,73.9-1665,75.9C4167.4-375.8,4140.2-381.7,4095.5-418.6z"/></g></g></svg></a>
+            </div>
+          </div>
+          <div class="project-img left">
+            <img src="./static/img/unclearballot.png" alt="" />
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content right">
+            <div class="project-label">Graduate Student Instructor</div>
+            <h4 class="project-title">EECS 183</h4>
+            <div class="project-details">
+              <p>One of three GSIs in charge of running EECS 183, an introductory programming courses and one of the largest courses at the University of Michigan at close to 2000 students per year. Responsibilities include handling administration of the course, holding office hours for students, and instructing lab sections.</p>
+              <ul>
+                <li>Teaching</li>
+                <li>Admninistration</li>
+              </ul>
+            </div>
+            <div class="featured-links">
+              <a href="https://eecs183.org/" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"><title>External</title><g><path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z"></path><path d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z"></path></g></svg></a>
+            </div>
+          </div>
+          <div class="project-img right">
+            <img src="./static/img/eecs183.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content left">
+            <div class="project-label">Capital One SES Hackathon 1st Place</div>
+            <h4 class="project-title">Kickback</h4>
+            <div class="project-details">
+              <p>Kickback reviews your purchase behavior and transaction history, figures out what you like to buy, and makes spending cheaper with personalized discounts developed with our custom recommendation engine.</p>
+              <ul>
+                <li>Python</li>
+                <li>Tensor Flow</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="featured-links">
+              <a href="https://github.com/kartkand/kickback_app" target="_blank" rel="nofollow noopener noreferrer" aria-label="Github Link"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549"><title>Github</title><path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365 c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63 c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996 c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136 c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559 c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559 c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997 c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851 c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136 c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41 c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126 c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817 c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994 c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849 c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24 c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979 c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146 c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995 c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906 C438.536,184.851,428.728,148.168,409.132,114.573z"></path></svg></a>
+              <a href="https://kickback-app.herokuapp.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"><title>External</title><g><path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z"></path><path d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z"></path></g></svg></a>
+            </div>
+          </div>
+
+          <div class="project-img left">
+            <img src="./static/img/mockup.png" alt="" />
+          </div>
+        </div>
+
+        <div class="project">
+
+          <div class="project-content right">
+            <div class="project-label">Byte Labs Director</div>
+            <h4 class="project-title">MPowered Entrepreneurship</h4>
+            <div class="project-details">
+              <p>As head of the technology segment of MPowered Entreprenurship, the largest student-run entrperenurship organization at U-M, founded a tech consulting group that works with companies in the Detroit and Ann Arbor startup ecosystem.</p>
+              <ul>
+                <li>React</li>
+                <li>AWS</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="featured-links">
+              <a href="https://mpowered.umich.edu/" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"><title>External</title><g><path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z"></path><path d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z"></path></g></svg></a>
+            </div>
+
+          </div>
+
+          <div class="project-img right">
+            <img src="./static/img/mpowered.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-content left">
+            <div class="project-label">San Francisco Police Department</div>
+            <h4 class="project-title">Data Visualizations</h4>
+            <div class="project-details">
+              <p>Using public data from the San Francisco Police Department created data visualizations using the D3 library. Data set contained dispatch information  for emergency calls with call time, location, and dispatch type. Created a crossfilter of the data, a map plotting every dispatch in the data set, and a scatter plot that displays the time each call was received against the dispatch time.</p>
+              <ul>
+                <li>JavaScript</li>
+                <li>D3</li>
+              </ul>
+            </div>
+            <div class="featured-links">
+              <a href="https://github.com/kartkand/SanFranVisualization" target="_blank" rel="nofollow noopener noreferrer" aria-label="Github Link"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 438.549 438.549"><title>Github</title><path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365 c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63 c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996 c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136 c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559 c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559 c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997 c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851 c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136 c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41 c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126 c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817 c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994 c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849 c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24 c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979 c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146 c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995 c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906 C438.536,184.851,428.728,148.168,409.132,114.573z"></path></svg></a>
+              <a href="https://sfpdanalysis.herokuapp.com/" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"><title>External</title><g><path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z"></path><path d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140 c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z"></path></g></svg></a>
+            </div>
+          </div>
+
+          <div class="project-img left">
+            <img src="./static/img/d3.png" alt="" />
+          </div>
+        </div>
+
+      </div>
+    </div> 
+    
+  </div>
+
+  <div class="hero-body">
+    <div class="dark-panel column is-8 is-offset-2">
+      <div class="columns" style="width: 100%;">
+        <h4 class="section-title"><span class="section-number">03. </span>Skills</h4>
+      </div>
+      <div class="columns skills is-mobile is-multiline">
+        
+        <div class="column is-half-mobile">
+          <h4 class="skill-type">Languages</h4>
+          <ul class="skill-list">
+            <li> C++</li>
+            <li> Python</li>
+            <li> JavaScript</li>
+            <li> Matlab</li>
+            <li> Java</li>
+            <li> HTML/CSS</li>
+            <li> SQL</li>
+          </ul>
+        </div>
+        <div class="column is-half-mobile">
+          <h4 class="skill-type">Technologies</h4>
+          <ul class="skill-list">
+            <li> React</li>
+            <li> Angular</li>
+            <li> Node.js</li>
+            <li> D3</li>
+            <li> Flask</li>
+            <li> Spring (Java)</li>
+          </ul>
+        </div>
+        <div class="column is-half-mobile">
+          <h4 class="skill-type">Tools</h4>
+          <ul class="skill-list">
+            <li> Bash</li>
+            <li> Git</li>
+            <li> XCode</li>
+            <li> Sublime</li>
+            <li> IntelliJ</li>
+          </ul>
+        </div>
+        <div class="column is-half-mobile">
+          <h4 class="skill-type">Design</h4>
+          <ul class="skill-list">
+            <li> Illustrator</li>
+            <li> Photoshop</li>
+            <li> InDesign</li>
+            <li> After Effects</li>
+            <li> Xd</li>
+            <li> Balsamiq</li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<footer class="footer" style="padding-bottom: 2rem;">
+    <div class="content has-text-centered">
+        <a href="https://codepen.io/kartikeya-kandula/" target="_blank" class="btn-social"><i class="fa fa-codepen"></i></a>
+        <a href="https://www.linkedin.com/in/kartikeyakandula/" target="_blank" class="btn-social"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.behance.net/kartikeyakandula" target="_blank" class="btn-social"><i class="fa fa-behance"></i></a>
+        <a href="https://github.com/kartkand" target="_blank" class="btn-social"><i class="fa fa-github-square"></i></a>
+        <a href="mailto:kandula.kartikeya@gmail.com" target="_blank" class="btn-social"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="content has-text-centered">
+        <div class="footer-brand">&copy 2019 Kartikeya Kandula</div>
+    </div>
+</footer>
+
+
+
+<script>
+  const tabs = document.querySelector('.tabs');
+
+  tabs.addEventListener('click', e => handleClick(e));
+
+  function handleClick(e) {
+    const target = e.target;
+    const tabNum = target.dataset.tab;
+    const activeTab = document.querySelector('.tabs .active');
+    const activeContent = document.querySelector(
+      '.content-container .visible'
+    );
+    const currentContent = document.querySelector(
+      `.content-section[data-tab='${tabNum}']`
+    );
+    
+    if (!tabNum) {
+      return;
+    }
+    
+    activeTab.classList.remove('active');
+    target.classList.add('active');
+    activeContent.classList.remove('visible');
+    currentContent.classList.add('visible');
+  }
+
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+
+
+</body>
+</html>
